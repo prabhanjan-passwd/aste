@@ -9,4 +9,4 @@
             controller_password: redhat
             controller_host: 192.168.122.139
             validate_certs: false
-            controller_config_file: ./controller_config.cfg
+            #controller_config_file: ./controller_config.cfg
