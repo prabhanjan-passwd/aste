@@ -1,0 +1,12 @@
+- hosts: all
+  tasks:
+        - name: Create a new token using username/password
+          ansible.controller.token:
+            description: 'Temporary token for subsequent tasks'
+            scope: "write"
+            state: present
+            controller_username: admin
+            controller_password: redhat
+            controller_host: 192.168.122.139
+            validate_certs: false
+            controller_config_file: ./controller_config.cfg
